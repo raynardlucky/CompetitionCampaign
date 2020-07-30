@@ -1,4 +1,8 @@
 <%= form_with model: @participant, class: "nifty_form" do |f| %>
+    <% if @token != nil %>
+        <%= hidden_field_tag :invite_token, @token %>
+    <% end %>
+
     <%= f.label :first_name %> <br />
     <%= f.text_field :first_name %> <br />
 
