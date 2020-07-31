@@ -5,6 +5,7 @@ The email sent contains a link that can be shared with others.
 if someone else fills out the form of the link that is shared then the original link poster will get an extra entry.
 
 The system generates token from Participant.id and time when object participant was created. That token becomes a parameter for a registration link. So when someone submits the form from the registration link that contains a token as a parameter, the original poster will get an extra entry.
+Client can see list of the winners(top 10 persons with the most entries).
 
 This project doesn't have a feature to set the date when the webpage can be accessed and the date when the webpage expires. I have searched which method to implement those features maybe I can use cache but I still don't know if it's gonna work or not.
 
