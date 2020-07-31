@@ -1,0 +1,17 @@
+<h1>Congratulation !!</h1>
+<h2>Top 10 Highest Entries </h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Entries</th>
+  </tr>
+
+  <% @winner.each do |winner| %>
+    <tr>
+      <td><%= "#{winner.first_name} " "  #{winner.last_name}" %></td>
+      <td><%= winner.email %></td>
+      <td><%= winner.entries %></td>
+    </tr>
+  <% end %>
+  </table>
