@@ -16,9 +16,7 @@ class ParticipantsController < ApplicationController
       @token_params = params[:invite_token]
       if @token_params != nil
         inviter = Participant.find_by(token: @token_params)
-        if inviter != nil
-          inviter.increment(:entries).save
-        end
+        inviter.increment(:entries).save if inviter != nil
       end
     else
       redirect_to participants_new_path, alert: "Error creating Participant."
@@ -27,6 +25,10 @@ class ParticipantsController < ApplicationController
 
   def show
     @participant = Participant.find(params[:id])
+  end
+
+  def winner
+    @winner = Participant.order(:entries).reverse.take(10)
   end
 
 

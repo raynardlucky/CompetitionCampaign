@@ -1,0 +1,15 @@
+<h1>Congratulation !!</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Entries</th>
+  </tr>
+
+  <% @winner.each do |winner| %>
+    <tr>
+      <td><%= "#winner.first_name " " #winner.last_name" %></td>
+      <td><%= winner.entries %></td>
+    </tr>
+  <% end %>
+  </table>
