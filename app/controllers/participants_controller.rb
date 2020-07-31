@@ -29,6 +29,7 @@ class ParticipantsController < ApplicationController
 
   def winner
     @winner = Participant.order(:entries).reverse.take(10)
+    render status:200 if @winner.count <=10
   end
 
 

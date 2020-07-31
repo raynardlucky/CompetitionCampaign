@@ -11,7 +11,6 @@ RSpec.describe ParticipantsController, type: :controller do
 
   describe "GET #winner" do
     before do
-      # 15.times{Participant.create(entries: rand(1..10))}
       Participant.create(first_name: "John", last_name: "Doe", email: "test1@mail.com", phone_number: "08965411", entries: 8).save
       Participant.create(first_name: "Capt", last_name: "America", email: "test2@mail.com", phone_number: "08965412", entries: 10).save
       Participant.create(first_name: "Thor", last_name: "Asgard", email: "test3@mail.com", phone_number: "08965413", entries: 1).save
