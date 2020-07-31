@@ -1,5 +1,5 @@
 # README
-In this project, a simple webpage was built to spread the word about a new product.
+In this project, a simple webpage was built to spread the news about a new product.
 The user will fill in the registration form, after filling in and submit the form,  user will receive an email notification that the registration was successful and get one entry point for the competition.
 The email sent contains a link that can be shared with others.
 if someone else fills out the form of the link that is shared then the original link poster will get an extra entry.
